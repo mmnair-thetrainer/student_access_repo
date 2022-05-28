@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var a = [12,20,13,45,67];
+var names = ['Shobin','Manu','Aswathi','Nitu','Govind'];
+document.write("The array is: " + names + "<br/>");
+document.write("The length of array is: " + names.length + "<br/>");
+document.write("The value of array at 2nd index is: " + names[2] + "<br/>");
+document.write("The value of array at last index is: " + names[names.length - 1] + "<br/>");
+names[1] = 'Rahul';
+document.write("Now, the array is: " + names + "<br/>");
+names.push('Manu');
+document.write("Now, the array after push is: " + names + "<br/>");
+names.pop();
+document.write("Now, the array after pop is: " + names + "<br/>");
+names.shift();
+document.write("Now, the array after shift is: " + names + "<br/>");
+names.unshift('Ajith');
+document.write("Now, the array after unshift is: " + names + "<br/>");
+document.write("Position of Aswathi in Array is: " + names.indexOf('Aswathi') + "<br/>");
+names.splice(names.indexOf('Aswathi')+1,0,'Neena');
+document.write("Now, the array after splice is: " + names + "<br/>");
+
+document.write("Print array values seperately <br/>");
+for(var i=0;i<names.length;i++)
+{
+document.write("names["+i+"] ==>"+names[i]+"<br/>");
+}
+</script>
+</body>
+</html>

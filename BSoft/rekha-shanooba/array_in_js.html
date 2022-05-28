@@ -1,0 +1,14 @@
+<html>
+<head></head>
+<body>
+<script>
+var names= ['Rekha','Shanooba','Manu','Govind','Ramu'];
+names.splice(2,1); // removes value from an index
+document.write(names + "<br/>");
+names.splice(names.indexOf('Ramu'),1,'Devan');
+document.write(names + "<br/>"); // replace value of array.
+names.splice(names.indexOf('Govind'),0,'Ajith','Pradeep','Nitu');
+document.write(names + "<br/>"); // inserts value in between array.
+</script>
+</body>
+</html>

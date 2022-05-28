@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+<script language="javascript" type="text/javascript">
+var name = "Aswathi";
+var a = 10, b = 20; 
+var money = 145.50; 
+var neg = true; 
+var sum = a + b;
+var lb = "<br/>";
+document.write("Hello " + name + "<br/>")
+document.write("Sum = " + sum + "<br/>")
+document.write("Type of name is " + typeof(name) + lb );
+document.write("Type of a is " + typeof(a) + lb );
+document.write("Type of money is " + typeof(money) + lb );
+document.write("Type of neg is " + typeof(neg) + lb );
+
+var scopedVar = "G"; 
+function identifyScope(){
+	var scopedVar = "L"
+	document.write(scopedVar);	
+}
+</script>
+</body>
+</html>

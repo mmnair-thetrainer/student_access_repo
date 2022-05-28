@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var message = "                  This is a string management ";
+var message2 = "example                           ";
+var regex =  (/^[A-Za-z]+$/);
+message = message.concat(message2);
+document.write("Original String: " + message + "<br/>");
+document.write("Character at 8th index: " + message[8] + "<br/>");
+document.write("All caps: " + message.toUpperCase() + "<br/>");
+document.write("All small: " + message.toLowerCase() + "<br/>");
+document.write("Length of string: " + message.length + "<br/>");
+document.write("Get sub string of string: " + message.slice(9,16) + "<br/>");
+document.write("Replace string: " + message.replace('ex','s') + "<br/>");
+document.write("Check for 'string': " + message.includes('string') + "<br/>");
+document.write("Check for 'shobin': " + message.includes('shobin') + "<br/>");
+document.write("Match using regex: " + message.match(regex) + "<br/>");
+document.write("Test using regex: " + regex.test(message) + "<br/>");
+var splittedArray = message.split(" ");
+document.write("Splitted Array is: " + splittedArray  + "<br/>");
+document.write("Word at 4rd index of Splitted Array is: " + splittedArray[4]  + "<br/>");
+document.write("Joined String is: " + splittedArray.join('.')  + "<br/>");
+document.write("Trim left and right spaces: " + message.trim()  + "<br/>");
+</script>
+</body>
+</html>

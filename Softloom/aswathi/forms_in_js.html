@@ -1,0 +1,40 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var a, b;
+function addNumbers()
+{
+ a = parseInt(document.forms["myForm"]["valueA"].value);
+ b = parseInt(document.forms["myForm"]["valueB"].value);
+ var sum = a+b;
+ document.write("Sum = " + sum);
+}
+
+function compareNumbers()
+{
+ a = document.forms["myForm"]["valueA"].value;
+ b = document.forms["myForm"]["valueB"].value;
+ if(a>b)
+ {
+  document.write("A is big");
+ }
+ else
+ {
+  document.write("B is big");
+ }
+}
+</script>
+<form name="myForm" id="myForm">
+<label>Enter Value A: </label>
+<input type="text" name="valueA" id="valueA"/>
+<br/>
+<label>Enter Value B: </label>
+<input type="text" name="valueB" id="valueB"/>
+<br/>
+<input type="submit" name="adder" id="adder" value="Add" onclick="addNumbers()"/>
+<input type="submit" name="comparer" id="comparer" value="Compare" onclick="compareNumbers()"/>
+</form>
+</body>
+</html

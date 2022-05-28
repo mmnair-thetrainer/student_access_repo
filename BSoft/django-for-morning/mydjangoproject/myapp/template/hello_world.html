@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Welcome to Hello Django</title>
+</head>
+<body>
+<h1>Hello {{name}}. Welcome to Django. Today is {{current}}</h1>
+Finding the biggest number challenge!!! <br/>
+{% if value1 > value2 %}
+{{value1}} is big <br/>
+{% elif value2 > value1 %}
+{{value2}} is big <br/>
+{% endif %}
+
+List of Names<br/>
+{% for name in names %}
+{{name}}<br/>
+{% endfor %}
+</body>
+</html>

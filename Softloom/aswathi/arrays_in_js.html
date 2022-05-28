@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var students = ['Aswathi','Shobin','Nitu','Rekha','Govind'];
+document.write("Length of array is " + students.length + "<br/>");
+document.write("Value of array at 2nd index is " + students[2] + "<br/>");
+document.write("Value of array at last index is " + students[students.length-1] + "<br/>");
+students.push('Rahul'); //Add to the end
+document.write("The array is: " + students + "<br/>");
+students.pop(); //Removed from the end
+document.write("The array is: " + students + "<br/>");
+students.shift(); // Removed from the begin
+document.write("The array is: " + students + "<br/>");
+students.unshift('Manu') // Add to the begin
+document.write("The array is: " + students + "<br/>");
+document.write("Position of Rekha : " + students.indexOf('Nitu') + "<br/>");
+students.splice(students.indexOf('Nitu'),1);
+document.write("The array is: " + students + "<br/>");
+
+var copiedStudents = students;
+document.write("The array is: " + copiedStudents + "<br/>");
+students[students.indexOf('Shobin')] = 'Aswathi';
+document.write("The array is: " + students + "<br/>");
+</script>
+</body>
+</html

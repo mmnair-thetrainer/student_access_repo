@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var initialval=10;
+var limitval=200;
+var sum, orgnum;
+
+for(var i=initialval;i<limitval; i++){
+sum=0;
+orgnum = i;
+	while(i>0){
+	console.log(i);
+		var n=i%10;
+		sum =sum+(n*n*n);
+		i=i/10;
+	}
+	if(sum==orgnum){
+		document.write(i);
+	}
+}
+</script>
+</body>
+</html

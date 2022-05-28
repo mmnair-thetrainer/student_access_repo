@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var message = "    This is a string management example ";
+var message2 = "for js   ";
+var regex = (/^[A-Za-z]+$/);
+message = message.concat(message2);
+document.write("Original string: " + message + "<br/>");
+document.write("Character at 8th index: " + message[8] + "<br/>");
+document.write("Character at 8th index using charAt: " + message.charAt(8) + "<br/>");
+document.write("All caps: " + message.toUpperCase()+ "<br/>");
+document.write("All small: " + message.toLowerCase() + "<br/>");
+document.write("Length of string: " + message.length + "<br/>");
+document.write("Get substring of string: " + message.slice(9,16) + "<br/>");
+document.write("Replace a string: " + message.replace('ex','s') + "<br/>");
+document.write("Check for 'string': " + message.includes('string') + "<br/>");
+document.write("Check for 'aswathi': " + message.includes('aswathi') + "<br/>");
+var splittedArray = message.split(" ");
+document.write("Splitted array is: " + splittedArray + "<br/>");
+document.write("Word at 4th index of splitted array: " + splittedArray[4] + "<br/>");
+document.write("Joined string is: " + splittedArray.join("#") + "<br/>");
+document.write("Trimmed string is: " + message.trim() + "<br/>");
+document.write("Test using regex: " + regex.test(message) + "<br/>");
+document.write("Match using regex: " + message.match(regex) + "<br/>");
+</script>
+</body>
+</html

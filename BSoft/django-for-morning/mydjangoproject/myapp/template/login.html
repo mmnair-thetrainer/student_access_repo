@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+<div>
+    Avtar information {{status}}
+</div>
+<form name="formName" action="{% url 'login' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+  <div style = "max-width:470px;">
+            <center>
+               <input type = "text" style = "margin-left:20%;"
+                  placeholder = "Email or Username" name = "username" />
+            </center>
+         </div>
+
+         <br>
+
+         <div style = "max-width:470px;">
+            <center>
+               <input type = "password" style = "margin-left:20%;"
+                  placeholder = "Password" name = "password" />
+            </center>
+         </div>
+
+         <br>
+
+        <div style = "max-width:470px;">
+            <center>
+               <input type = "file" style = "margin-left:35%;"
+                  placeholder = "Avatar" name = "picture" />
+            </center>
+         </div>
+
+         <br>
+
+         <div style = "max-width:470px;">
+            <center>
+
+               <button style = "border:0px; background-color:#4285F4; margin-top:8%;
+                  height:35px; width:80%;margin-left:19%;" type = "submit"
+                  value = "Login" >
+                  <strong>Login</strong>
+               </button>
+
+            </center>
+         </div>
+</form>
+</body>
+</html>

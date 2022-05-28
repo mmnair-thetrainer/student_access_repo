@@ -1,0 +1,44 @@
+<collection category="New Arraivals">
+    <car name="Wagon R">
+        <make>Maruti</make>
+        <model>2022</model>
+        <type>Hatchback</type>
+        <bhp>1000 CC</bhp>
+        <exshowroom>INR 6 Lakhs</exshowroom>
+    </car>
+    <car name="Bressa">
+        <make>Maruti</make>
+        <model>2022</model>
+        <type>SUV</type>
+        <bhp>1200 CC</bhp>
+        <exshowroom>INR 10 Lakhs</exshowroom>
+    </car>
+    <car name="Tiago">
+        <make>TATA</make>
+        <model>2022</model>
+        <type>Hatchback</type>
+        <bhp>1000 CC</bhp>
+        <exshowroom>INR 4.5 Lakhs</exshowroom>
+    </car>
+    <car name="Nexon">
+        <make>TATA</make>
+        <model>2022</model>
+        <type>SUV</type>
+        <bhp>1200 CC</bhp>
+        <exshowroom>INR 8.7 Lakhs</exshowroom>
+    </car>
+    <car name="Grand i10">
+        <make>Hyundai</make>
+        <model>2022</model>
+        <type>Hatchback</type>
+        <bhp>1000 CC</bhp>
+        <exshowroom>INR 5.5 Lakhs</exshowroom>
+    </car>
+    <car name="Venue">
+        <make>Hyundai</make>
+        <model>2022</model>
+        <type>SUV</type>
+        <bhp>1200 CC</bhp>
+        <exshowroom>INR 8 Lakhs</exshowroom>
+    </car>
+</collection>

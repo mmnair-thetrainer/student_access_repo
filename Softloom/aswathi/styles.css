@@ -1,0 +1,17 @@
+div.container{
+text-align:center;
+}
+
+div.hello_div{
+color:red;
+font-size:32px;
+}
+
+div.welcome_div{
+color:green;
+font-size:14px;
+}
+
+div#manu_hello_div{
+color:blue;
+}

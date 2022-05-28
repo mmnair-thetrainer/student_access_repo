@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function getValuesFromForm()
+{
+ var firstValue = document.forms["myForm"]["valueA"].value;
+ var secondValue = document.forms["myForm"]["valueB"].value;
+ document.write(parseInt(firstValue) + parseInt(secondValue));
+}
+</script>
+<form name='myForm' id='myForm' type="GET" action="#">
+<label>Input Value A: </label> &nbsp;&nbsp;&nbsp;
+<input type='text' name='valueA' id='valueA'/>
+<label>Input Value B: </label> &nbsp;&nbsp;&nbsp;
+<input type='text' name='valueB' id='valueB'/>
+<input type='Submit' value='Clickable' id='clickable' onclick="getValuesFromForm()"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Angular Controller Example</title>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+        </script>
+    </head>
+    <body>
+        <div ng-app="ctrlrApp" ng-controller="studentController">
+            First Name: <input type="text" ng-model="student.fName"/> <br/>
+            Last Name: <input type="text" ng-model="student.lName"/> <br/>
+            Course: <input type="text" ng-model="student.course"/> <br/>
+            Fee per month: <input type="text" ng-model="student.monthly_fee"/> <br/>
+            Course Duration: <input type="text" ng-model="student.duration"/> <br/>
+
+            <p>Hello {{student.fullName()}}</p>
+            <p>Your total course fee for {{student.course}} will be {{student.totalFee()}}.</p>
+        </div>
+        <script>
+            var ctrlrApp = angular.module("ctrlrApp",[]);
+
+            ctrlrApp.controller('studentController', function($scope){
+                $scope.student={
+                    fName: "",
+                    lName: "",
+                    course: "",
+                    monthly_fee:0,
+                    duration:0,
+
+                    fullName: function(){
+                        var studObj = $scope.student;
+                        return studObj.fName + " " + studObj.lName;
+                    },
+
+                    totalFee: function(){
+                        var studObj = $scope.student;
+                        return studObj.monthly_fee * studObj.duration;
+                    }
+                };
+            });
+        </script>
+    </body>
+</html>

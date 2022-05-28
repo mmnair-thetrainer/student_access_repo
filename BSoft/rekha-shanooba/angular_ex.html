@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Angular Example</title>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+        </script>
+    </head>
+    <body>
+        <div ng-app="" ng-init="students = [{course:'Python FS',name:'Rekha', monthly_fee:1000, no_of_months:3},
+        {course:'Python FS',name:'Shanooba', monthly_fee:1000, no_of_months:3},
+        {course:'MEVN Stack',name:'Aswathi', monthly_fee:2300, no_of_months:2},
+        {course:'MEAN Stack',name:'Govind', monthly_fee:2500, no_of_months:3},
+        {course:'MERN Stack',name:'Anuradha', monthly_fee:2900, no_of_months:4}]">
+        <p>List the students</p>
+            <ol>
+                <li ng-repeat="stud in students">
+                    {{'Name: ' + stud.name + ', Course: ' + stud.course}}
+                    {{'Total Fee: ' + stud.monthly_fee * stud.no_of_months}}
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
